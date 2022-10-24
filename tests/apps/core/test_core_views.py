@@ -37,10 +37,10 @@ class RedirectTestCase(TestCase):
 
         # Expect to be redirected to the jitsi url with a token when joining the "test" room
         token = (
-            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
             "ibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQuaml0c2k"
             "iLCJyb29tIjoidGVzdCIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXIuanBnIiwibmFtZSI"
-            "6Imd1ZXN0IiwiZW1haWwiOiIifX19.HY_E1pCaYzARFkl5jrTpnffQIScdZZMc3v_DpdneP7Q"
+            "6Imd1ZXN0IiwiZW1haWwiOiIifX19.iM24UxPOUHpMiDcop6zy0P9c5PHX-ZLypEQiiQ8DMHI"
         )
         self.assertRedirects(
             response,
@@ -64,11 +64,11 @@ class RedirectTestCase(TestCase):
 
         # Url to which we expect to be redirected for the "test" room
         token = (
-            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
             "ibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQuaml0c2k"
             "iLCJyb29tIjoidGVzdCIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXIuanBnIiwibmFtZSI"
-            "6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.EslqEtBSpNtzBFkd_iIkEIWcTI"
-            "25S7ihhu4IE1oE_x4"
+            "6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.TL71l7cn2dJMXSJotkt0xieFDv"
+            "q7wVa4d0uOlzr9eG4"
         )
         self.assertRedirects(
             response,
@@ -94,11 +94,11 @@ class RedirectTestCase(TestCase):
 
         # Url to which we expect to be redirected for the "test" room
         token = (
-            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjAwMCw"
             "ibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQuaml0c2k"
             "iLCJyb29tIjoidGVzdCIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXIuanBnIiwibmFtZSI"
-            "6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.EslqEtBSpNtzBFkd_iIkEIWcTI"
-            "25S7ihhu4IE1oE_x4"
+            "6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.TL71l7cn2dJMXSJotkt0xieFDv"
+            "q7wVa4d0uOlzr9eG4"
         )
         self.assertRedirects(
             response,

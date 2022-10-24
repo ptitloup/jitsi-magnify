@@ -36,11 +36,11 @@ class TokenUtilsTestCase(TestCase):
         self.assertEqual(
             token,
             (
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
                 "wMCwibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQ"
                 "uaml0c2kiLCJyb29tIjoibXktcm9vbSIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXI"
-                "uanBnIiwibmFtZSI6Imd1ZXN0IiwiZW1haWwiOiIifX19.yzGbUJywsVqL0WAbzslIoUovLuAKeLBqXs"
-                "N3h0sPaMo"
+                "uanBnIiwibmFtZSI6Imd1ZXN0IiwiZW1haWwiOiIifX19.mCcDVhhWyWfOEGTpiNdemQlPURTCFGh-AW"
+                "OrLFY2Tds"
             ),
         )
 
@@ -54,11 +54,11 @@ class TokenUtilsTestCase(TestCase):
         self.assertEqual(
             token,
             (
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
                 "wMCwibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQ"
                 "uaml0c2kiLCJyb29tIjoibXktcm9vbSIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXI"
-                "uanBnIiwibmFtZSI6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.sU6tEi"
-                "0SKOAheTcS4BCXMhYz1ntiTvKi1uAAiuPNP3k"
+                "uanBnIiwibmFtZSI6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.0pKgUY"
+                "7362CaQZYXYgAysot431giCertbe4BIOlJ3_8"
             ),
         )
 
@@ -74,10 +74,10 @@ class TokenUtilsTestCase(TestCase):
         self.assertEqual(
             token,
             (
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5MDc3MTI2MDAsImlhdCI6MTkwNzcxMjA"
                 "wMCwibW9kZXJhdG9yIjp0cnVlLCJhdWQiOiJqaXRzaSIsImlzcyI6ImFwcF9pZCIsInN1YiI6Im1lZXQ"
                 "uaml0c2kiLCJyb29tIjoibXktcm9vbSIsImNvbnRleHQiOnsidXNlciI6eyJhdmF0YXIiOiJhdmF0YXI"
-                "uanBnIiwibmFtZSI6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.sU6tEi"
-                "0SKOAheTcS4BCXMhYz1ntiTvKi1uAAiuPNP3k"
+                "uanBnIiwibmFtZSI6Im1pY2thZWwiLCJlbWFpbCI6Im1pY2thZWxAZXhhbXBsZS5jb20ifX19.0pKgUY"
+                "7362CaQZYXYgAysot431giCertbe4BIOlJ3_8"
             ),
         )
