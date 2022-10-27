@@ -5,6 +5,7 @@ import * as React from 'react';
 import { FunctionComponent, useRef } from 'react';
 import { useIntl } from 'react-intl';
 
+import { useAuthContext } from '../../../../../context';
 import { useRouting } from '../../../../../context/routing';
 import { commonMessages } from '../../../../../i18n/Messages/commonMessages';
 import { UsersRepository } from '../../../../../services/users/users.repository';
@@ -17,6 +18,7 @@ export const ResponsiveLayoutHeaderAvatar: FunctionComponent<ResponsiveLayoutHea
   const intl = useIntl();
   const avatarRef = useRef<HTMLDivElement>(null);
   const routing = useRouting();
+  const authContext = useAuthContext();
 
   const queryClient = useQueryClient();
   const { mutate: logoutUser } = useMutation(async () => UsersRepository.logout(), {
@@ -25,6 +27,16 @@ export const ResponsiveLayoutHeaderAvatar: FunctionComponent<ResponsiveLayoutHea
       routing.goToLogin();
     },
   });
+
+  const getInitials = (): string => {
+    const user = authContext.user;
+    if (user) {
+      const splitName = user.name.split(' ');
+      const initials = splitName[0][0] + splitName[1][0];
+      return initials.toUpperCase();
+    }
+    return '';
+  };
 
   return (
     <Box ref={avatarRef} align={'center'} direction={'row'} justify={'center'}>
@@ -52,7 +64,7 @@ export const ResponsiveLayoutHeaderAvatar: FunctionComponent<ResponsiveLayoutHea
         ]}
       >
         <Avatar background={'light-3'} size={'40px'}>
-          <Text style={{ textDecoration: 'none' }}>NP</Text>
+          <Text style={{ textDecoration: 'none' }}>{getInitials()}</Text>
         </Avatar>
       </Menu>
     </Box>
